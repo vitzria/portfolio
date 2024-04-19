@@ -1,0 +1,617 @@
+/*scroll bar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: linear-gradient(90deg, #F3E7E9 0%, #E3EEFF 99%, #E3EEFF 100%);
+    box-shadow: inset 0 0 1px rgb(112, 112, 112);
+    overflow: hidden;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #f84d4d 0%, #d87093 100%);
+    border-radius: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(45deg,rgb(252, 212, 253), rgb(255, 190, 236), #f8b9b9);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 150vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-web{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    background-color: white;
+}
+
+.cabeçalhoLink {
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.logo {
+    cursor: pointer;
+    padding: 0;
+    margin: 1rem;
+}
+
+.cabeçalhoLink a{
+    color: #d87093;
+    font-size: 16px;
+}
+
+.cabeçalhoLink a:hover{
+    color: black;
+    transition: 0.3s all;
+}
+
+.main{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 11.5rem;
+}
+
+.containerText{
+    padding: 150px 0 0 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 3rem;
+    align-items: left;
+}
+
+.photo img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: #d87093;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+}
+
+.text{
+    text-align: left;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.text h3{
+    color: black;
+    font-size: 15px;
+}
+
+.text h1{
+    color: black;
+    margin-top: 10px;
+}
+
+.text span{
+    color: #f84d4d;
+}
+
+.text p{
+    color: black;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.redesSociais a{
+    color: rgb(248, 77, 77);
+    padding: 0px 10px 0 0;
+    margin-top: 10px;
+    line-height: 2;
+}
+
+.redesSociais a:hover{
+    color: rgb(255, 169, 169);
+    transition: 0.3s;
+}
+
+.curriculo-content{
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.name h1{
+    font-size: 40px;
+    color: rgb(248, 77, 77)
+}
+
+.name{
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.curriculo-content h3{
+    color: rgb(248, 77, 77);
+}
+
+.curriculo-contato i{
+    display: flex;
+    gap: 1rem;
+    color: #f84d4d;
+}
+
+.curriculo-contato p{
+    color: black;
+    font-weight: normal;
+}
+
+.curriculo-habilidades li{
+    list-style: inside;
+}
+
+.containerContato{
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.containerContato h1{
+    font-size: 30px;
+    color: rgb(248, 77, 77);
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+}
+
+.infos p{
+    color: black;
+    font-weight: normal;
+    display: flex;
+}
+
+.infos i{
+    display: flex;
+    gap: 0.5rem;
+    color: #f84d4d;
+}
+
+.containerContato h3{
+    font-size: 25px;
+    color: rgb(248, 77, 77);
+}
+
+.contato-redesSociais a i{
+    color: #f84d4d;
+    gap: 2rem;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.contato-redesSociais a i:hover{
+    color: rgb(255, 108, 108);
+    transition: 0.3s;
+}
+
+.container-portfolio h1{
+    font-size: 30px;
+    color: rgb(248, 77, 77);
+}
+
+.container-portfolio{
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.container-portfolio img{
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.container-portfolio p{
+    padding: 5px;
+}
+
+.container-portfolio a{
+    outline: none;
+    color:#f84d4d;
+}
+
+.container-portfolio i{
+    color: #f84d4d;
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.container-portfolio a:hover{
+    color: rgb(255, 108, 108);
+    transition: 0.3s;
+}
+
+/*MENU MOBILE*/
+
+.abrir-menu{
+    display: none;
+}
+
+.abrir-menu i{
+    color: #f84d4d;
+    font-size: 40px;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+    margin: 10px;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.menu-mobile{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    background-color: #ffc4d8;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~.overlay{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #f84d4d;
+    font-size: 30px;
+}
+
+.menu-mobile .menu-link{
+    text-align: right;
+}
+
+.menu-link li a{
+    color: #f84d4d;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+    flex-direction: column;
+}
+
+.menu-mobile .menu-link li a:hover{
+    background-color: #f84d4d;
+    color: white;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 320px){
+    .main, .containerText, .curriculo-content, .containerContato, .container-portfolio{
+        display: flex;
+        gap: 2rem;
+        padding: 20px 0 10px 0px;
+        margin: 0px 20px 0px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-web{
+        display: none;
+    }
+    .abrir-menu{
+        display: block;
+    }
+    body{
+        background: linear-gradient(45deg,rgb(252, 212, 253), rgb(255, 190, 236), #f8b9b9);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 220vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .curriculo-content{
+        justify-content: center;
+        align-items: center;
+        padding: 35px 20px 10px 20px;
+        gap: 7px;
+        max-width: 800px;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .name h1{
+        font-size: 25px;
+        color: rgb(248, 77, 77)
+    }
+    
+    .name{
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .curriculo-content h3{
+        color: rgb(248, 77, 77);
+    }
+    
+    .curriculo-contato i{
+        display: flex;
+        gap: 10px;
+        color: #f84d4d;
+    }
+    
+    .curriculo-contato p{
+        color: black;
+        font-weight: normal;
+    }
+    
+    .curriculo-habilidades li{
+        list-style: inside;
+    }
+
+    .containerContato{
+        justify-content: center;
+        align-items: center;
+        padding: 35px 20px 10px 20px;
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .containerContato h1{
+        font-size: 25px;
+        color: rgb(248, 77, 77);
+    }
+    
+    .infos{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 10px 0px 10px;
+    }
+    .contato-redesSociais a i{
+        color: #f84d4d;
+        font-size: 20px;
+    }
+
+    .container-portfolio h1{
+        font-size: 25px;
+        color: rgb(248, 77, 77);
+    }
+    
+    .container-portfolio{
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 15px;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .container-portfolio img{
+        border-radius: 30px;
+        padding: 5px;
+        width: 280px;
+    }
+    
+    .container-portfolio p{
+        padding: 0px;
+    }
+    
+    .container-portfolio i{
+        color: #f84d4d;
+        font-size: 16px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width:600px){
+    .main, .containerText, .curriculo-content, .containerContato, .container-portfolio{
+        display: flex;
+        gap: 2rem;
+        padding: 20px 0 10px 0px;
+        margin: 0px 20px 0px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-web{
+        display: none;
+    }
+    .abrir-menu{
+        display: block;
+    }
+    body{
+        background: linear-gradient(45deg,rgb(252, 212, 253), rgb(255, 190, 236), #f8b9b9);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 160vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo img{
+        height: 250px;
+        width: 250px;
+    }
+
+    .curriculo-content{
+        justify-content: center;
+        align-items: center;
+        padding: 35px 20px 10px 20px;
+        gap: 7px;
+        max-width: 800px;
+        margin: auto;
+        text-align: left;
+    }
+    
+    .name h1{
+        font-size: 25px;
+        color: rgb(248, 77, 77)
+    }
+    
+    .name{
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .curriculo-content h3{
+        color: rgb(248, 77, 77);
+    }
+    
+    .curriculo-contato i{
+        display: flex;
+        gap: 10px;
+        color: #f84d4d;
+    }
+    
+    .curriculo-contato p{
+        color: black;
+        font-weight: normal;
+    }
+    
+    .curriculo-habilidades li{
+        list-style: inside;
+    }
+    .containerContato{
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px 10px 20px;
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .containerContato h1{
+        font-size: 25px;
+        color: rgb(248, 77, 77);
+    }
+    
+    .infos{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 10px 0px 10px;
+    }
+    .contato-redesSociais a i{
+        color: #f84d4d;
+        font-size: 20px;
+    }
+    .container-portfolio h1{
+        font-size: 25px;
+        color: rgb(248, 77, 77);
+    }
+    
+    .container-portfolio{
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        gap: 15px;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .container-portfolio img{
+        border-radius: 30px;
+        padding: 5px;
+        width: 280px;
+    }
+    
+    .container-portfolio p{
+        padding: 0px;
+    }
+    
+    .container-portfolio i{
+        color: #f84d4d;
+        font-size: 16px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
